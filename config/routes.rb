@@ -1,5 +1,9 @@
 RailsMongodb::Application.routes.draw do
+  get "registration/login"
+  get "registration/register"
   root :to => "home#index"
+  get "home/register"
+  get "home/login"
   get "home/about"
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

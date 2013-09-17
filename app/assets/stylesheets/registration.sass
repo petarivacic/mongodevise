@@ -1,0 +1,61 @@
+// Variables
+
+$white: #fff
+$blue: #3498db
+$darkblue: #2c3e50
+$bkg: #dddddd
+$radius: 5px
+
+// Base
+
+body
+  background: $bkg
+  font-family: "Signika"
+
+// Sign up form
+
+.form 
+  position: relative
+  width: 500px
+  margin: 50px auto
+  background: $white
+  border-radius: $radius
+.break 
+  background-color: $bkg
+  height: 2px
+  width: 900px
+input 
+  font-size: 20px
+  font-family: "Aller Light"
+  border: none
+  border-radius: $radius
+  padding: 15px
+  width: 470px
+  color: $darkblue
+  &:focus
+    color: $blue
+    outline: none
+      
+// WebKit shizz
+
+::-webkit-input-placeholder
+  color: #d3dadb
+
+// Button
+
+.btn
+  position: relative
+  width: 100px
+  height: auto
+  margin: 20px auto
+  border-radius: $radius
+  cursor: pointer
+  text-align: center
+  background: $blue
+  color: $white
+  &:active
+    top: 4px
+    background: darken($blue, 10%)
+.btntxt
+  font-size: 30px
+  padding: 10px 15px
